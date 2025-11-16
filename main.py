@@ -1,4 +1,3 @@
-
 !pip install biopython
 from Bio import AlignIO
 import math
