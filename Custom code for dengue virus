@@ -1,5 +1,8 @@
-Residue level diversity at each positions in dengue viral proteins:
-
-
-   
-   
+```python
+# This is a custom Python code for protein-level analysis of Dengue virus sequences
+# It calculates Shannon entropy, consensus residues, residue frequencies, and conservation scores
+1.STANDARD_AA, EXCLUDED, GAP constants:
+        You explicitly define which residues to include/exclude.Particularly, filtering out 'X' and '-' is tailored to the  dengue protein MSA.
+2.Filtering column residues before entropy calculation:
+          filtered = [res for res in column if res != GAP and res not in EXCLUDED]
+          
